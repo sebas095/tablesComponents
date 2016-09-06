@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/sebas095/tablesComponents/issues"
   },
-  "homepage": "https://github.com/sebas095/tablesComponents#readme"
+  "homepage": "https://github.com/sebas095/tablesComponents#readme",
+  "dependencies": {
+    "babel-preset-es2015": "6.14.0",
+    "babel-preset-react": "6.11.1",
+    "babelify": "7.3.0",
+    "browserify": "13.1.0",
+    "http-server": "0.9.0",
+    "react": "15.3.1",
+    "react-dom": "15.3.1",
+    "watchify": "3.7.0"
+  }
 }
