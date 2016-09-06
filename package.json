@@ -4,7 +4,12 @@
   "description": "Practicando algunas tablas hecha con react",
   "main": "index.js",
   "scripts": {
-    "test": "echo Hola mundo"
+    "postinstall": "mkdir -p assets/js",
+    "build-js": "browserify -t [ babelify --presets [ es2015 react ] ] browser/main.js -o assets/js/bundle.js",
+    "watch-js": "watchify -t [ babelify --presets [ es2015 react ] ] browser/main.js -o assets/js/bundle.js -dv",
+    "start": "npm run build-js && http-server .",
+    "start-dev": "export NODE_ENV=development && npm run watch-js & http-server .",
+    "test": ""
   },
   "repository": {
     "type": "git",
