@@ -31,3 +31,27 @@
   top: 50%;
   left: 50%;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #DDD;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px;
+  width: 95%;
+}
