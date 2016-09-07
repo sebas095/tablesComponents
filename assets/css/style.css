@@ -47,11 +47,15 @@ th {
 }
 
 tbody tr:nth-child(odd) {
-   background-color: #DDD;
+   background-color: rgb(211, 238, 236);
 }
 
 table {
   border-collapse: collapse;
   margin: 15px;
   width: 95%;
+}
+
+.area {
+  background-color: rgb(211, 238, 236);
 }

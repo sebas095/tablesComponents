@@ -20,7 +20,6 @@ export default class DEOTR extends React.Component {
             <RDTable dataRD={this.props.store.dataRD} />
           </div>
           <div className="row">
-            <p>RESUMEN INFACTIBILIDAD/LIMITACIONES</p>
             <ILTable />
           </div>
         </div>
