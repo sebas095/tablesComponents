@@ -58,11 +58,51 @@ export default class RDTable extends React.Component {
       </table>
     );
 
+    let tb3 = (
+      <table>
+        <thead>
+          <tr>
+            <th>TIPO RECURSO</th>
+            <th>PROGRAMA REDESPACHO</th>
+            <th>GENERACIÓN REAL</th>
+            <th>PROGRAMA DEO-TR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>HIDRÁULICOS</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th>TÉRMICOS</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th>MENORES</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th>TRANSACCIONES INTERNACIONALES</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+    );
+
     return (
       <div>
-        <h1>RESUMEN RESERVA/DEMANDA</h1>
+        <h1>RESULTADOS AGREGADOS</h1>
         <div>{tb1}</div>
         <div>{tb2}</div>
+        <div>{tb3}</div>
       </div>
     );
   }

@@ -59,3 +59,7 @@ table {
 .area {
   background-color: rgb(211, 238, 236);
 }
+
+#tb {
+  overflow-x: scroll;
+}
