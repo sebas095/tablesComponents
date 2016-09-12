@@ -4,15 +4,13 @@ export default class DropdownInfo extends React.Component {
   constructor() {
     super();
     this.state = {
-      colSpan: null,
       elements: []
     };
   }
 
   componentWillMount() {
     this.setState({
-      elements: this.props.elements,
-      colSpan: this.colSpan
+      elements: this.props.elements
     });
   }
 
@@ -45,7 +43,7 @@ export default class DropdownInfo extends React.Component {
 
     return (
       <tr>
-        <td colSpan={this.state.colSpan} className="center">
+        <td colSpan={8} className="center">
           <div>
             <table>
               <thead>{head}</thead>

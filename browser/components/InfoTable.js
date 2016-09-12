@@ -20,7 +20,7 @@ export default class InfoTable extends React.Component {
 
     this.props.dataInfo.forEach((item, id) => {
       data.push(
-        <tr key={item.name + "" + id}>
+        <tr key={item.nombre + "" + id}>
           <td>{item.posicion}</td>
           <td>
             <LockIcon /><br />
@@ -54,7 +54,6 @@ export default class InfoTable extends React.Component {
       info.fill(null);
       info[index] = (
         <DropdownInfo
-          colSpan={8}
           key={"key" + index + "InfoTable"}
           elements={this.state.dataInfo[index].unidades}
         />
