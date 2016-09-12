@@ -33,7 +33,7 @@ export default class ILTable extends React.Component {
           <button id="sbcs" onClick={this.changeComponent.bind(this)}>Sobrecargas</button>
           <button id="ctg" onClick={this.changeComponent.bind(this)}>Contingencias</button>
         </div><br/>
-        <div>{tb}</div>
+        <div className="scr">{tb}</div>
       </div>
     );
   }

@@ -24,9 +24,10 @@ export default class DEOTR extends React.Component {
     let tb, id = "";
     if (this.state.tableType === "tabla") {
       tb = <TableComponent dataTable={this.props.store}/>
-      id = "tb";
+      id = "tb inf";
     } else {
       tb = <InfoTable dataInfo={this.props.store}/>
+      id = "inf";
     }
 
     return (
@@ -55,7 +56,7 @@ export default class DEOTR extends React.Component {
         </div><br/><br/>
         <div className="row">
           <h3>RESULTADOS DEO-TR</h3>
-          <div className="col-6" id={id}>
+          <div className={"col-6 " + id}>
             <div className="row">
               <div className="col-6">
                 <button id="infoGr" onClick={this.changeTable.bind(this)}>INFOGRAFÍA</button>
