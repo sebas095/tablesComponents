@@ -4,12 +4,14 @@ import TableComponent from './TableComponent';
 import InfoTable from './InfoTable';
 import ILTable from './ILTable';
 import DB from '../store/infactibilidades.json';
+import DATA from '../store/data.json';
+
 
 export default class DEOTR extends React.Component {
   constructor() {
     super();
     this.state = {
-      tableType: "tabla",
+      tableType: "",
       filter: ""
     };
   }
@@ -21,10 +23,10 @@ export default class DEOTR extends React.Component {
   render() {
     let tb, id = "";
     if (this.state.tableType === "tabla") {
-      tb = <TableComponent dataR={this.props.store.dataR}/>
+      tb = <TableComponent dataTable={this.props.store}/>
       id = "tb";
     } else {
-      tb = <InfoTable dataR={this.props.store.dataR}/>
+      tb = <InfoTable dataInfo={this.props.store}/>
     }
 
     return (
@@ -64,9 +66,9 @@ export default class DEOTR extends React.Component {
             </div>
             {tb}
           </div>
-          <div className="col-6">
+          <div className="col-6" id="space">
             <div className="row">
-              <RDTable dataRD={this.props.store.dataRD} />
+              <RDTable dataRD={DATA.dataRD} />
             </div>
             <div className="row">
               <ILTable store={DB}/>

@@ -6,8 +6,7 @@ export default class DropdownRow extends React.Component {
     this.state = {
       colSpan: null,
       elements: [],
-      type: '',
-      id: ''
+      type: ''
     };
   }
 
@@ -15,8 +14,7 @@ export default class DropdownRow extends React.Component {
     this.setState({
       colSpan: this.props.colSpan,
       elements: this.props.elements,
-      type: this.props.type,
-      id: this.props.id
+      type: this.props.type
     });
   }
 
@@ -45,7 +43,6 @@ export default class DropdownRow extends React.Component {
       );
     }
 
-    // console.log("ID: ", this.props.id);
     return (
       <tr>
         <td colSpan={this.state.colSpan} className="center">

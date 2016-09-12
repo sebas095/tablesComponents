@@ -1,0 +1,1865 @@
+[
+    {
+        "nombre": "PRADO",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 295000,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 8.036001,
+                "progrDEORT": 15,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PRADO1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 8,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PRADO2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PRADO3"
+            },
+            {
+                "genReal": 8.036001,
+                "progrDEORT": 15,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PRADO1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 8,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PRADO2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PRADO3"
+            }
+        ],
+        "arranques": [
+            "PRADO2",
+            "PRADO2"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 8,
+        "disponibilidad": 31,
+        "genReal": 8.036001,
+        "minTecnico": 24,
+        "progrDEORT": 23,
+        "nroUnidades": 2,
+        "posicion": 20,
+        "deltaGen": 14.963999
+    },
+    {
+        "nombre": "GUAJIR11",
+        "tipo": "T",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 233496,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 78.10995,
+                "progrDEORT": 98.10995,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUAJIR11"
+            },
+            {
+                "genReal": 78.10995,
+                "progrDEORT": 98.10995,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUAJIR11"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 72,
+        "disponibilidad": 135,
+        "genReal": 78.10995,
+        "minTecnico": 72,
+        "progrDEORT": 98.10995,
+        "nroUnidades": 1,
+        "posicion": 27,
+        "deltaGen": 20
+    },
+    {
+        "nombre": "PORCE2",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 220000,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 75,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PORCE21"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 75,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PORCE22"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 75,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PORCE23"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 75,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PORCE21"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 75,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PORCE22"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 75,
+                "arranque": true,
+                "parada": false,
+                "nombre": "PORCE23"
+            }
+        ],
+        "arranques": [
+            "PORCE21",
+            "PORCE22",
+            "PORCE23",
+            "PORCE21",
+            "PORCE22",
+            "PORCE23"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 0,
+        "disponibilidad": 405,
+        "genReal": 0,
+        "minTecnico": 225,
+        "progrDEORT": 225,
+        "nroUnidades": 3,
+        "posicion": 28,
+        "deltaGen": 225
+    },
+    {
+        "nombre": "MIEL1",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 190000,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 28.81836,
+                "progrDEORT": 106,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MIEL11"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 20,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MIEL12"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 20,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MIEL13"
+            },
+            {
+                "genReal": 28.81836,
+                "progrDEORT": 106,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MIEL11"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 20,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MIEL12"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 20,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MIEL13"
+            }
+        ],
+        "arranques": [
+            "MIEL12",
+            "MIEL13",
+            "MIEL12",
+            "MIEL13"
+        ],
+        "paradas": [],
+        "minG": 28,
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 28,
+        "disponibilidad": 318,
+        "genReal": 28.81836,
+        "minTecnico": 60,
+        "progrDEORT": 146,
+        "nroUnidades": 3,
+        "posicion": 30,
+        "deltaGen": 117.18164
+    },
+    {
+        "nombre": "SOGAMOSO",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 129999,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 120,
+                "arranque": true,
+                "parada": false,
+                "nombre": "SOGAMOSO1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 120,
+                "arranque": true,
+                "parada": false,
+                "nombre": "SOGAMOSO2"
+            },
+            {
+                "genReal": 119.7591,
+                "progrDEORT": 219.7591000000001,
+                "arranque": false,
+                "parada": false,
+                "nombre": "SOGAMOSO3"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 120,
+                "arranque": true,
+                "parada": false,
+                "nombre": "SOGAMOSO1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 120,
+                "arranque": true,
+                "parada": false,
+                "nombre": "SOGAMOSO2"
+            },
+            {
+                "genReal": 119.7591,
+                "progrDEORT": 219.7591000000001,
+                "arranque": false,
+                "parada": false,
+                "nombre": "SOGAMOSO3"
+            }
+        ],
+        "arranques": [
+            "SOGAMOSO1",
+            "SOGAMOSO2",
+            "SOGAMOSO1",
+            "SOGAMOSO2"
+        ],
+        "paradas": [],
+        "minG": 120,
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 120,
+        "disponibilidad": 741,
+        "genReal": 119.7591,
+        "minTecnico": 360,
+        "progrDEORT": 459.7591000000001,
+        "nroUnidades": 3,
+        "posicion": 39,
+        "deltaGen": 340.0000000000001
+    },
+    {
+        "nombre": "JAGUAS",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 129990,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 15,
+                "arranque": true,
+                "parada": false,
+                "nombre": "JAGUAS1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 15,
+                "arranque": true,
+                "parada": false,
+                "nombre": "JAGUAS2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 15,
+                "arranque": true,
+                "parada": false,
+                "nombre": "JAGUAS1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 15,
+                "arranque": true,
+                "parada": false,
+                "nombre": "JAGUAS2"
+            }
+        ],
+        "arranques": [
+            "JAGUAS1",
+            "JAGUAS2",
+            "JAGUAS1",
+            "JAGUAS2"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 0,
+        "disponibilidad": 170,
+        "genReal": 0,
+        "minTecnico": 30,
+        "progrDEORT": 30,
+        "nroUnidades": 2,
+        "posicion": 40,
+        "deltaGen": 30
+    },
+    {
+        "nombre": "ALBAN",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 125000,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ALTANCHI1"
+            },
+            {
+                "genReal": 29.0633,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": true,
+                "nombre": "ALTANCHI2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ALTANCHI3"
+            },
+            {
+                "genReal": 12.93962,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": true,
+                "nombre": "BAJANCHI1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJANCHI2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJANCHI3"
+            },
+            {
+                "genReal": 23.73867,
+                "progrDEORT": 5,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJANCHI4"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ALTANCHI1"
+            },
+            {
+                "genReal": 29.0633,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": true,
+                "nombre": "ALTANCHI2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ALTANCHI3"
+            },
+            {
+                "genReal": 12.93962,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": true,
+                "nombre": "BAJANCHI1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJANCHI2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJANCHI3"
+            },
+            {
+                "genReal": 23.73867,
+                "progrDEORT": 5,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJANCHI4"
+            }
+        ],
+        "arranques": [],
+        "paradas": [
+            "ALTANCHI2",
+            "BAJANCHI1",
+            "ALTANCHI2",
+            "BAJANCHI1"
+        ],
+        "minG": 5,
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 5,
+        "disponibilidad": 273,
+        "genReal": 65.74159,
+        "minTecnico": 102,
+        "progrDEORT": 5,
+        "nroUnidades": 1,
+        "posicion": 42,
+        "deltaGen": -60.74159
+    },
+    {
+        "nombre": "GUATRON",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 112000,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 45.5138,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL31"
+            },
+            {
+                "genReal": 44.91762,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL32"
+            },
+            {
+                "genReal": 45.16708,
+                "progrDEORT": 6.983889711776273,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL33"
+            },
+            {
+                "genReal": 45.29475,
+                "progrDEORT": 45.29475,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL34"
+            },
+            {
+                "genReal": 45.30625,
+                "progrDEORT": 45.30625,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL35"
+            },
+            {
+                "genReal": 45.01889,
+                "progrDEORT": 45.01889,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL36"
+            },
+            {
+                "genReal": 67.03313,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL41"
+            },
+            {
+                "genReal": 67.9766,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL42"
+            },
+            {
+                "genReal": 66.65764,
+                "progrDEORT": 38.80668392008529,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL43"
+            },
+            {
+                "genReal": 18.69236,
+                "progrDEORT": 1,
+                "arranque": false,
+                "parada": false,
+                "nombre": "TRONERA1"
+            },
+            {
+                "genReal": 18.67556,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "TRONERA2"
+            },
+            {
+                "genReal": 45.5138,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL31"
+            },
+            {
+                "genReal": 44.91762,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL32"
+            },
+            {
+                "genReal": 45.16708,
+                "progrDEORT": 6.983889711776273,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL33"
+            },
+            {
+                "genReal": 45.29475,
+                "progrDEORT": 45.29475,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL34"
+            },
+            {
+                "genReal": 45.30625,
+                "progrDEORT": 45.30625,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL35"
+            },
+            {
+                "genReal": 45.01889,
+                "progrDEORT": 45.01889,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL36"
+            },
+            {
+                "genReal": 67.03313,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL41"
+            },
+            {
+                "genReal": 67.9766,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL42"
+            },
+            {
+                "genReal": 66.65764,
+                "progrDEORT": 38.80668392008529,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUADAL43"
+            },
+            {
+                "genReal": 18.69236,
+                "progrDEORT": 1,
+                "arranque": false,
+                "parada": false,
+                "nombre": "TRONERA1"
+            },
+            {
+                "genReal": 18.67556,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "TRONERA2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 500,
+        "disponibilidad": 512,
+        "genReal": 510.2536800000001,
+        "minTecnico": 106,
+        "progrDEORT": 252.41046363186155,
+        "nroUnidades": 11,
+        "posicion": 47,
+        "deltaGen": -257.84321636813854
+    },
+    {
+        "nombre": "PORCE3",
+        "tipo": "H",
+        "despachable": false,
+        "despacho_central": true,
+        "oferta": 100000.01000000001,
+        "prueba": true,
+        "unidades": [
+            {
+                "genReal": 118.2746,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": true,
+                "nombre": "PORCE31"
+            },
+            {
+                "genReal": 157.9894,
+                "progrDEORT": 124.99999999999994,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PORCE32"
+            },
+            {
+                "genReal": 156.5556,
+                "progrDEORT": 125,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PORCE33"
+            },
+            {
+                "genReal": 158.0951,
+                "progrDEORT": 124.99999999999994,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PORCE34"
+            },
+            {
+                "genReal": 118.2746,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": true,
+                "nombre": "PORCE31"
+            },
+            {
+                "genReal": 157.9894,
+                "progrDEORT": 124.99999999999994,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PORCE32"
+            },
+            {
+                "genReal": 156.5556,
+                "progrDEORT": 125,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PORCE33"
+            },
+            {
+                "genReal": 158.0951,
+                "progrDEORT": 124.99999999999994,
+                "arranque": false,
+                "parada": false,
+                "nombre": "PORCE34"
+            }
+        ],
+        "arranques": [],
+        "paradas": [
+            "PORCE31",
+            "PORCE31"
+        ],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 300,
+        "disponibilidad": 660,
+        "genReal": 590.9147,
+        "minTecnico": 500,
+        "progrDEORT": 374.9999999999999,
+        "nroUnidades": 3,
+        "posicion": 51,
+        "deltaGen": -215.91470000000015
+    },
+    {
+        "nombre": "ELQUIMBO",
+        "tipo": "H",
+        "despachable": false,
+        "despacho_central": true,
+        "oferta": 56251.03,
+        "prueba": true,
+        "unidades": [
+            {
+                "genReal": 187.862,
+                "progrDEORT": 170,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ELQUIMBO1"
+            },
+            {
+                "genReal": 84.04,
+                "progrDEORT": 135.42233525499117,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ELQUIMBO2"
+            },
+            {
+                "genReal": 187.862,
+                "progrDEORT": 170,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ELQUIMBO1"
+            },
+            {
+                "genReal": 84.04,
+                "progrDEORT": 135.42233525499117,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ELQUIMBO2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": 80,
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 280,
+        "disponibilidad": 280,
+        "genReal": 271.902,
+        "minTecnico": 0,
+        "progrDEORT": 305.42233525499114,
+        "nroUnidades": 2,
+        "posicion": 62,
+        "deltaGen": 33.52033525499115
+    },
+    {
+        "nombre": "BETANIA",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 56251.020000000004,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 105.8765,
+                "progrDEORT": 150,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BETANIA1"
+            },
+            {
+                "genReal": 103.9453,
+                "progrDEORT": 60,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BETANIA2"
+            },
+            {
+                "genReal": 160.6923,
+                "progrDEORT": 60.69229999999993,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BETANIA3"
+            },
+            {
+                "genReal": 105.8765,
+                "progrDEORT": 150,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BETANIA1"
+            },
+            {
+                "genReal": 103.9453,
+                "progrDEORT": 60,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BETANIA2"
+            },
+            {
+                "genReal": 160.6923,
+                "progrDEORT": 60.69229999999993,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BETANIA3"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": 60,
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 366,
+        "disponibilidad": 468,
+        "genReal": 370.5141,
+        "minTecnico": 180,
+        "progrDEORT": 270.69229999999993,
+        "nroUnidades": 3,
+        "posicion": 63,
+        "deltaGen": -99.82180000000005
+    },
+    {
+        "nombre": "GUATAPE",
+        "tipo": "H",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 56251,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 17.71011,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE1"
+            },
+            {
+                "genReal": 17.4715,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE2"
+            },
+            {
+                "genReal": 16.85344,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE3"
+            },
+            {
+                "genReal": 18.2551,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE4"
+            },
+            {
+                "genReal": 17.55018,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE5"
+            },
+            {
+                "genReal": 64.06421,
+                "progrDEORT": 70,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE6"
+            },
+            {
+                "genReal": 18.18089,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE7"
+            },
+            {
+                "genReal": 18.34127,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE8"
+            },
+            {
+                "genReal": 17.71011,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE1"
+            },
+            {
+                "genReal": 17.4715,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE2"
+            },
+            {
+                "genReal": 16.85344,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE3"
+            },
+            {
+                "genReal": 18.2551,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE4"
+            },
+            {
+                "genReal": 17.55018,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE5"
+            },
+            {
+                "genReal": 64.06421,
+                "progrDEORT": 70,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE6"
+            },
+            {
+                "genReal": 18.18089,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE7"
+            },
+            {
+                "genReal": 18.34127,
+                "progrDEORT": 35,
+                "arranque": false,
+                "parada": false,
+                "nombre": "GUATAPE8"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 245,
+        "reserva3": 0,
+        "progrRedespacho": 315,
+        "disponibilidad": 560,
+        "genReal": 188.4267,
+        "minTecnico": 0,
+        "progrDEORT": 315,
+        "nroUnidades": 8,
+        "posicion": 65,
+        "deltaGen": 126.57329999999999
+    },
+    {
+        "nombre": "ESMERALDA",
+        "tipo": "HD",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 4.479428,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ESMERAL1"
+            },
+            {
+                "genReal": 4.479428,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ESMERAL2"
+            },
+            {
+                "genReal": 4.479428,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ESMERAL1"
+            },
+            {
+                "genReal": 4.479428,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ESMERAL2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 21,
+        "disponibilidad": 21,
+        "genReal": 8.958856,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 2,
+        "posicion": 68,
+        "deltaGen": -8.958856
+    },
+    {
+        "nombre": "FLORIDA2",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 10.52882,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "FLORID21"
+            },
+            {
+                "genReal": 9.300082,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "FLORID22"
+            },
+            {
+                "genReal": 10.52882,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "FLORID21"
+            },
+            {
+                "genReal": 9.300082,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "FLORID22"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 18,
+        "disponibilidad": 18,
+        "genReal": 19.828902,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 2,
+        "posicion": 70,
+        "deltaGen": -19.828902
+    },
+    {
+        "nombre": "MGUANAQUITA",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 4,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MGUANAQUITA"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 4,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MGUANAQUITA"
+            }
+        ],
+        "arranques": [
+            "MGUANAQUITA",
+            "MGUANAQUITA"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 8,
+        "disponibilidad": 8,
+        "genReal": 0,
+        "minTecnico": 4,
+        "progrDEORT": 4,
+        "nroUnidades": 1,
+        "posicion": 72,
+        "deltaGen": 4
+    },
+    {
+        "nombre": "MBARROSO1",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 23.5323,
+                "progrDEORT": 3.5322999999999958,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MBARROSO1"
+            },
+            {
+                "genReal": 23.5323,
+                "progrDEORT": 3.5322999999999958,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MBARROSO1"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 10,
+        "disponibilidad": 10,
+        "genReal": 23.5323,
+        "minTecnico": 0,
+        "progrDEORT": 3.5322999999999958,
+        "nroUnidades": 1,
+        "posicion": 93,
+        "deltaGen": -20.000000000000004
+    },
+    {
+        "nombre": "MSANTIAGO",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 0.2,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MSANTIAGO1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0.2,
+                "arranque": true,
+                "parada": false,
+                "nombre": "MSANTIAGO1"
+            }
+        ],
+        "arranques": [
+            "MSANTIAGO1",
+            "MSANTIAGO1"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 1,
+        "disponibilidad": 1,
+        "genReal": 0,
+        "minTecnico": 0.2,
+        "progrDEORT": 0.2,
+        "nroUnidades": 1,
+        "posicion": 108,
+        "deltaGen": 0.2
+    },
+    {
+        "nombre": "MTUNJITA",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 19.13229,
+                "progrDEORT": 12.670762501309992,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MTUNJITA1"
+            },
+            {
+                "genReal": 19.13229,
+                "progrDEORT": 12.670762501309992,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MTUNJITA1"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 20,
+        "disponibilidad": 20,
+        "genReal": 19.13229,
+        "minTecnico": 0,
+        "progrDEORT": 12.670762501309992,
+        "nroUnidades": 1,
+        "posicion": 116,
+        "deltaGen": -6.461527498690009
+    },
+    {
+        "nombre": "SANMIGUEL",
+        "tipo": "HD",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 10.63718,
+                "progrDEORT": 13,
+                "arranque": false,
+                "parada": false,
+                "nombre": "SANMIGUEL1"
+            },
+            {
+                "genReal": 10.87199,
+                "progrDEORT": 13,
+                "arranque": false,
+                "parada": false,
+                "nombre": "SANMIGUEL2"
+            },
+            {
+                "genReal": 10.63718,
+                "progrDEORT": 13,
+                "arranque": false,
+                "parada": false,
+                "nombre": "SANMIGUEL1"
+            },
+            {
+                "genReal": 10.87199,
+                "progrDEORT": 13,
+                "arranque": false,
+                "parada": false,
+                "nombre": "SANMIGUEL2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 25,
+        "disponibilidad": 26,
+        "genReal": 21.50917,
+        "minTecnico": 0,
+        "progrDEORT": 26,
+        "nroUnidades": 2,
+        "posicion": 123,
+        "deltaGen": 4.490829999999999
+    },
+    {
+        "nombre": "MELPOPAL",
+        "tipo": "HD",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 5.874585,
+                "progrDEORT": 7,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MELPOPAL1"
+            },
+            {
+                "genReal": 4.99524,
+                "progrDEORT": 7,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MELPOPAL2"
+            },
+            {
+                "genReal": 5.874585,
+                "progrDEORT": 7,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MELPOPAL1"
+            },
+            {
+                "genReal": 4.99524,
+                "progrDEORT": 7,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MELPOPAL2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 14,
+        "disponibilidad": 14,
+        "genReal": 10.869824999999999,
+        "minTecnico": 0,
+        "progrDEORT": 14,
+        "nroUnidades": 2,
+        "posicion": 139,
+        "deltaGen": 3.1301750000000013
+    },
+    {
+        "nombre": "MMONTAÑITAS",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 9.867234,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MMONTAÑITAS1"
+            },
+            {
+                "genReal": 9.877232,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MMONTAÑITAS2"
+            },
+            {
+                "genReal": 9.867234,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MMONTAÑITAS1"
+            },
+            {
+                "genReal": 9.877232,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MMONTAÑITAS2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 18,
+        "disponibilidad": 18,
+        "genReal": 19.744466,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 2,
+        "posicion": 149,
+        "deltaGen": -19.744466
+    },
+    {
+        "nombre": "MPRADO4",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 1.87734,
+                "progrDEORT": 3,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MPRADO4"
+            },
+            {
+                "genReal": 1.87734,
+                "progrDEORT": 3,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MPRADO4"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 3,
+        "disponibilidad": 3,
+        "genReal": 1.87734,
+        "minTecnico": 0,
+        "progrDEORT": 3,
+        "nroUnidades": 1,
+        "posicion": 162,
+        "deltaGen": 1.12266
+    },
+    {
+        "nombre": "MPROVIDEN",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 15.94888,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MPROVIDEN1"
+            },
+            {
+                "genReal": 15.94888,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "MPROVIDEN1"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 5,
+        "disponibilidad": 5,
+        "genReal": 15.94888,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 1,
+        "posicion": 163,
+        "deltaGen": -15.94888
+    },
+    {
+        "nombre": "RPIEDRAS",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "RPIEDRAS1"
+            },
+            {
+                "genReal": 10.64884,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "RPIEDRAS2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "RPIEDRAS1"
+            },
+            {
+                "genReal": 10.64884,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "RPIEDRAS2"
+            }
+        ],
+        "arranques": [
+            "RPIEDRAS1",
+            "RPIEDRAS1"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 14,
+        "disponibilidad": 14,
+        "genReal": 10.64884,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 2,
+        "posicion": 172,
+        "deltaGen": -10.64884
+    },
+    {
+        "nombre": "CMAYAGUEZ",
+        "tipo": "TM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 25.66329,
+                "progrDEORT": 5.663289999999996,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CMAYAGUEZ"
+            },
+            {
+                "genReal": 25.66329,
+                "progrDEORT": 5.663289999999996,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CMAYAGUEZ"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 10,
+        "disponibilidad": 10,
+        "genReal": 25.66329,
+        "minTecnico": 0,
+        "progrDEORT": 5.663289999999996,
+        "nroUnidades": 1,
+        "posicion": 175,
+        "deltaGen": -20.000000000000004
+    },
+    {
+        "nombre": "C_LLERAS",
+        "tipo": "HD",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 21.44865,
+                "progrDEORT": 1.4486499999999936,
+                "arranque": false,
+                "parada": false,
+                "nombre": "C_LLERAS1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "C_LLERAS2"
+            },
+            {
+                "genReal": 21.44865,
+                "progrDEORT": 1.4486499999999936,
+                "arranque": false,
+                "parada": false,
+                "nombre": "C_LLERAS1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "C_LLERAS2"
+            }
+        ],
+        "arranques": [
+            "C_LLERAS2",
+            "C_LLERAS2"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 36,
+        "disponibilidad": 36,
+        "genReal": 21.44865,
+        "minTecnico": 0,
+        "progrDEORT": 1.4486499999999936,
+        "nroUnidades": 2,
+        "posicion": 180,
+        "deltaGen": -20.000000000000007
+    },
+    {
+        "nombre": "ALTOTULUA",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 9.080249,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ALTOTULUA1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "ALTOTULUA2"
+            },
+            {
+                "genReal": 9.080249,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "ALTOTULUA1"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "ALTOTULUA2"
+            }
+        ],
+        "arranques": [
+            "ALTOTULUA2",
+            "ALTOTULUA2"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 6,
+        "disponibilidad": 6,
+        "genReal": 9.080249,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 2,
+        "posicion": 181,
+        "deltaGen": -9.080249
+    },
+    {
+        "nombre": "BAJOTULUA",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "BAJOTULUA1"
+            },
+            {
+                "genReal": 5.055896,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJOTULUA2"
+            },
+            {
+                "genReal": 0,
+                "progrDEORT": 0,
+                "arranque": true,
+                "parada": false,
+                "nombre": "BAJOTULUA1"
+            },
+            {
+                "genReal": 5.055896,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "BAJOTULUA2"
+            }
+        ],
+        "arranques": [
+            "BAJOTULUA1",
+            "BAJOTULUA1"
+        ],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 6,
+        "disponibilidad": 6,
+        "genReal": 5.055896,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 2,
+        "posicion": 183,
+        "deltaGen": -5.055896
+    },
+    {
+        "nombre": "CUCUANA",
+        "tipo": "HD",
+        "despachable": true,
+        "despacho_central": true,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 13.96525,
+                "progrDEORT": 15,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CUCUANA1"
+            },
+            {
+                "genReal": 14.37012,
+                "progrDEORT": 15,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CUCUANA2"
+            },
+            {
+                "genReal": 13.96525,
+                "progrDEORT": 15,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CUCUANA1"
+            },
+            {
+                "genReal": 14.37012,
+                "progrDEORT": 15,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CUCUANA2"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 30,
+        "disponibilidad": 30,
+        "genReal": 28.335369999999998,
+        "minTecnico": 18.9,
+        "progrDEORT": 30,
+        "nroUnidades": 2,
+        "posicion": 192,
+        "deltaGen": 1.6646300000000025
+    },
+    {
+        "nombre": "CPROVIDEN",
+        "tipo": "HM",
+        "despachable": true,
+        "despacho_central": false,
+        "oferta": 0,
+        "prueba": false,
+        "unidades": [
+            {
+                "genReal": 17.89246,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CPROVIDEN1"
+            },
+            {
+                "genReal": 17.89246,
+                "progrDEORT": 0,
+                "arranque": false,
+                "parada": false,
+                "nombre": "CPROVIDEN1"
+            }
+        ],
+        "arranques": [],
+        "paradas": [],
+        "minG": "-",
+        "maxG": "-",
+        "reserva2": 0,
+        "reserva3": 0,
+        "progrRedespacho": 14,
+        "disponibilidad": 14,
+        "genReal": 17.89246,
+        "minTecnico": 0,
+        "progrDEORT": 0,
+        "nroUnidades": 1,
+        "posicion": 196,
+        "deltaGen": -17.89246
+    }
+]

@@ -34,7 +34,7 @@ export default class ContingencyTable extends React.Component {
   }
 
   handleDisplay(ev) {
-    let info = this.state.info;
+    let {info }= this.state;
     let index = Number(ev.target.id);
 
     if (info[index] === null) {
@@ -50,7 +50,9 @@ export default class ContingencyTable extends React.Component {
       info[index] = null;
     }
 
-    this.setState({info: info});
+    this.setState({
+      info: info
+    });
   }
 
   render() {

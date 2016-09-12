@@ -38,7 +38,7 @@ export default class CourtTable extends React.Component {
   }
 
   handleDisplay(ev) {
-    let info = this.state.info;
+    let {info} = this.state;
     let index = Number(ev.target.innerText) - 1;
 
     if (info[index] === null) {
@@ -54,7 +54,9 @@ export default class CourtTable extends React.Component {
       info[index] = null;
     }
 
-    this.setState({info: info});
+    this.setState({
+      info: info
+    });
   }
 
   render() {
