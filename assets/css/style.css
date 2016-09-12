@@ -63,3 +63,15 @@ table {
 #tb {
   overflow-x: scroll;
 }
+
+.center {
+  text-align: center;
+}
+
+.center ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
