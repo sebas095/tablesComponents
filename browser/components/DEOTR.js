@@ -74,7 +74,7 @@ export default class DEOTR extends React.Component {
     return (
       <div>
         <Row>
-          <div className="col-4">
+          <div className="col l4 m4 s12">
             <Input
               name='group1'
               onChange={this.handleFilter.bind(this)}
@@ -83,7 +83,7 @@ export default class DEOTR extends React.Component {
               label='Recurso Hidráulico y Térmico Despachados Centralmente'
             />
           </div>
-          <div className="col-4">
+          <div className="col l4 m4 s12">
             <Input
               name='group2'
               onChange={this.handleFilter.bind(this)}
@@ -92,7 +92,7 @@ export default class DEOTR extends React.Component {
               label='Recurso Hidráulico Despachados Centralmente'
             />
           </div>
-          <div className="col-4">
+          <div className="col l4 m4 s12">
             <Input
               name='group3'
               onChange={this.handleFilter.bind(this)}
@@ -103,7 +103,7 @@ export default class DEOTR extends React.Component {
           </div>
         </Row>
         <Row>
-          <div className="col-4">
+          <div className="col l4 m4 s12">
             <Input
               name='group4'
               onChange={this.handleFilter.bind(this)}
@@ -112,7 +112,7 @@ export default class DEOTR extends React.Component {
               label='Recurso No Despachado Centralmente'
             />
           </div>
-          <div className="col-4">
+          <div className="col l4 m4 s12">
             <Input
               name='group5'
               onChange={this.handleFilter.bind(this)}
@@ -121,7 +121,7 @@ export default class DEOTR extends React.Component {
               label='Recurso Despachable por DEO'
             />
           </div>
-          <div className="col-4">
+          <div className="col l4 m4 s12">
             <Input
               name='group6'
               onChange={this.handleFilter.bind(this)}
@@ -131,21 +131,22 @@ export default class DEOTR extends React.Component {
             />
           </div>
         </Row>
-        <br/><br/>
         <div className="row">
           <h4>RESULTADOS DEO-TR</h4>
-          <div className={"col-6 " + id}>
+          <div className="col l6 m6 s12">
             <div className="row">
-              <div className="col-6">
+              <div className="col l6 m6 s12">
                 <Button id="infoGr" onClick={this.changeTable.bind(this)}>INFOGRAFÍA</Button>
               </div>
-              <div className="col-6">
+              <div className="col l6 m6 s12">
                 <Button id="tabla" onClick={this.changeTable.bind(this)}>TABLA</Button>
               </div>
             </div>
-            {tb}
+            <div className={id}>
+              {tb}
+            </div>
           </div>
-          <div className="col-6" id="space">
+          <div className="col l6 m6 s12" id="space">
             <div className="row">
               <RDTable dataRD={DATA.dataRD} />
             </div>
