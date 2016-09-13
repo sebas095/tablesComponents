@@ -4,8 +4,8 @@ import LockIcon from 'react-icons/lib/md/lock';
 import SettingsIcon from 'react-icons/lib/md/settings';
 import MoodIcon from 'react-icons/lib/md/mood';
 
-let flag1 = false;
-let flag2 = false;
+let flag = false;
+let count = 0;
 
 export default class InfoTable extends React.Component {
   constructor() {
@@ -143,9 +143,9 @@ export default class InfoTable extends React.Component {
     let index = -1;
 
     if (this.props.filter.length === 0) {
-      if (!flag2) index = this.getIndex();
-      flag1 = false;
-      flag2 = true;
+      if (!flag) index = this.getIndex();
+      count = 0;
+      flag = true;
 
       this.state.table.forEach((val, i) => {
         data.push(val);
@@ -155,9 +155,9 @@ export default class InfoTable extends React.Component {
       });
     } else {
       let tmp = this.changeData();
-      if (!flag1) index = this.getIndex();
-      flag1 = true;
-      flag2 = false;
+      if (count < 9) index = this.getIndex();
+      count++;
+      flag = false;
 
       tmp.forEach((val, i) => {
         data.push(val);
