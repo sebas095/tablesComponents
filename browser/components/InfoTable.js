@@ -112,8 +112,9 @@ export default class InfoTable extends React.Component {
   changeData() {
     let data = [];
     let {dataInfo} = this.state;
-    let {filter} = this.props;
+    let {filter, filterDesv} = this.props;
     let index = 0;
+    filterDesv = (filterDesv.length > 0)? Number(filterDesv) : NaN;
 
     dataInfo.forEach((item, id) => {
       for (let i = 0; i < filter.length; i++) {
@@ -121,7 +122,7 @@ export default class InfoTable extends React.Component {
             (filter[i] === "2" && item.despacho_central && (item.tipo === "H" || item.tipo === "HD")) ||
             (filter[i] === "3" && (item.tipo === "T" || item.tipo === "TR")) ||
             (filter[i] === "4" && !item.despacho_central && (item.tipo === "HM" || item.tipo === "TM" || item.tipo === "HD")) ||
-            (filter[i] === "5" && item.despachable)) {
+            (filter[i] === "5" && item.despachable) || (!isNaN(filterDesv) && item.deltaGen > filterDesv)) {
 
           data.push(
             <tr key={item.nombre + "" + id}>
@@ -148,6 +149,38 @@ export default class InfoTable extends React.Component {
     return data;
   }
 
+  handleFilter() {
+    let data = [];
+    let {dataInfo} = this.state;
+    let {filterDesv} = this.props;
+    let index = 0;
+    filterDesv = (filterDesv.length > 0)? Number(filterDesv) : NaN;
+
+    dataInfo.forEach((item, id) => {
+      if (!isNaN(filterDesv) && item.deltaGen > filterDesv) {
+        data.push(
+          <tr key={item.nombre + "" + id}>
+            <td>{item.posicion}</td>
+            <td>
+              <LockIcon /><br />
+              <SettingsIcon /><br />
+              <MoodIcon />
+            </td>
+            <td onClick={this.handleDisplay.bind(this)} id={[id, index]}>{item.nombre}</td>
+            <td>{item.nroUnidades}u</td>
+            <td>{item.progrRedespacho.toFixed(1)}</td>
+            <td>{item.minTecnico}</td>
+            <td>{BarChart}</td>
+            <td>{item.disponibilidad}</td>
+          </tr>
+        );
+        index++;
+      }
+    });
+
+    return data;
+  }
+
   getIndex() {
     let {info} = this.state;
     for (let i = 0; i < info.length; i++) {
@@ -163,12 +196,24 @@ export default class InfoTable extends React.Component {
     let data = [];
     let index = -1;
 
-    if (this.props.filter.length === 0) {
+    if (this.props.filter.length === 0 && this.props.filterDesv.length === 0) {
       if (!flag2) index = this.getIndex();
       flag1 = false;
       flag2 = true;
 
       this.state.table.forEach((val, i) => {
+        data.push(val);
+        if (this.state.info[i] !== null && this.state.info[i] !== undefined && i !== index) {
+          data.push(this.state.info[i]);
+        }
+      });
+    } else if (this.props.filter.length === 0 && this.props.filterDesv.length > 0) {
+      let tmp = this.handleFilter();
+      if (!flag1) index = this.getIndex();
+      flag1 = true;
+      flag2 = false;
+
+      tmp.forEach((val, i) => {
         data.push(val);
         if (this.state.info[i] !== null && this.state.info[i] !== undefined && i !== index) {
           data.push(this.state.info[i]);

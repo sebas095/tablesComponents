@@ -7,36 +7,13 @@ import {Row, Input, Button} from 'react-materialize';
 import DB from '../store/infactibilidades.json';
 import DATA from '../store/data.json';
 
-/*
-let list = [];
-
-function h(ev) {
-  let {value, checked} = ev.target;
-  if (checked) {
-    if (list.indexOf(value) < 0) {
-      list.push(value);
-    }
-  } else {
-    if (list.indexOf(value) >= 0) {
-      list.splice(list.indexOf(value), 1);
-    }
-  }
-  console.log(list);
-}
-<Row>
-  <Input name='group1' onChange={h.bind(this)} type='checkbox' value='red' label='Red' />
-  <Input name='group2' onChange={h.bind(this)} type='checkbox' value='yellow' label='Yellow'/>
-  <Input name='group3' onChange={h.bind(this)} type='checkbox' value='green' label='Green'/>
-  <Input name='group4' onChange={h.bind(this)} type='checkbox' value='brown' label='Brown' />
-</Row>
-*/
-
 export default class DEOTR extends React.Component {
   constructor() {
     super();
     this.state = {
       tableType: "",
-      filter: []
+      filter: [],
+      filterDesv: ""
     };
   }
 
@@ -64,13 +41,19 @@ export default class DEOTR extends React.Component {
     });
   }
 
+  handleFilterDesv(ev) {
+    this.setState({
+      filterDesv: ev.target.value
+    });
+  }
+
   render() {
     let tb, id = "";
     if (this.state.tableType === "tabla") {
-      tb = <TableComponent dataTable={this.props.store} filter={this.state.filter} />
+      tb = <TableComponent dataTable={this.props.store} filter={this.state.filter} filterDesv={this.state.filterDesv} />
       id = "tb inf";
     } else {
-      tb = <InfoTable dataInfo={this.props.store} filter={this.state.filter} />
+      tb = <InfoTable dataInfo={this.props.store} filter={this.state.filter} filterDesv={this.state.filterDesv} />
       id = "inf";
     }
 
@@ -125,7 +108,7 @@ export default class DEOTR extends React.Component {
             />
           </div>
           <div className="col l4 m4 s12">
-            <Input s={6} label="Desviación > Pdesv" />
+            <Input s={6} label="Desviación > Pdesv" onChange={this.handleFilterDesv.bind(this)} />
           </div>
         </Row>
         <Row>
