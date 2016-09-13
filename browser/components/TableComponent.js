@@ -14,6 +14,46 @@ export default class TableComponent extends React.Component {
     });
   }
 
+  changeData() {
+    let data = [];
+    let {dataTable} = this.state;
+    let {filter} = this.props;
+
+    dataTable.forEach((item, id) => {
+      for(let i = 0; i < filter.length; i++) {
+        if ((filter[i] === "1" && item.despacho_central && (item.tipo === "H" || item.tipo === "T" || item.tipo === "TR" || item.tipo === "HD")) ||
+            (filter[i] === "2" && item.despacho_central && (item.tipo === "H" || item.tipo === "HD")) ||
+            (filter[i] === "3" && (item.tipo === "T" || item.tipo === "TR")) ||
+            (filter[i] === "4" && !item.despacho_central && (item.tipo === "HM" || item.tipo === "TM" || item.tipo === "HD")) ||
+            (filter[i] === "5" && item.despachable)) {
+
+          data.push(
+            <tr key={id}>
+              <td>{item.posicion}</td>
+              <td>{item.nombre}</td>
+              <td>{item.tipo}</td>
+              <td>{item.disponibilidad}</td>
+              <td>{item.progrRedespacho}</td>
+              <td>{item.genReal.toFixed(1)}</td>
+              <td>{item.progrDEORT.toFixed(1)}</td>
+              <td>{item.deltaGen.toFixed(1)}</td>
+              <td>{item.reserva2}</td>
+              <td>{item.reserva3}</td>
+              <td>{item.nroUnidades}u</td>
+              <td>{item.arranques.length}u</td>
+              <td>{item.paradas.length}u</td>
+              <td>{item.minG}</td>
+              <td>{item.maxG}</td>
+            </tr>
+          );
+          break;
+        }
+      }
+    });
+
+    return data;
+  }
+
   render() {
     let data = [];
     let head = (
@@ -36,27 +76,31 @@ export default class TableComponent extends React.Component {
       </tr>
     );
 
-    this.state.dataTable.forEach((item, id) => {
-      data.push(
-        <tr key={id}>
-          <td>{item.posicion}</td>
-          <td>{item.nombre}</td>
-          <td>{item.tipo}</td>
-          <td>{item.disponibilidad}</td>
-          <td>{item.progrRedespacho}</td>
-          <td>{item.genReal.toFixed(1)}</td>
-          <td>{item.progrDEORT.toFixed(1)}</td>
-          <td>{item.deltaGen.toFixed(1)}</td>
-          <td>{item.reserva2}</td>
-          <td>{item.reserva3}</td>
-          <td>{item.nroUnidades}u</td>
-          <td>{item.arranques.length}u</td>
-          <td>{item.paradas.length}u</td>
-          <td>{item.minG}</td>
-          <td>{item.maxG}</td>
-        </tr>
-      );
-    });
+    if (this.props.filter.length === 0) {
+      this.state.dataTable.forEach((item, id) => {
+        data.push(
+          <tr key={id}>
+            <td>{item.posicion}</td>
+            <td>{item.nombre}</td>
+            <td>{item.tipo}</td>
+            <td>{item.disponibilidad}</td>
+            <td>{item.progrRedespacho}</td>
+            <td>{item.genReal.toFixed(1)}</td>
+            <td>{item.progrDEORT.toFixed(1)}</td>
+            <td>{item.deltaGen.toFixed(1)}</td>
+            <td>{item.reserva2}</td>
+            <td>{item.reserva3}</td>
+            <td>{item.nroUnidades}u</td>
+            <td>{item.arranques.length}u</td>
+            <td>{item.paradas.length}u</td>
+            <td>{item.minG}</td>
+            <td>{item.maxG}</td>
+          </tr>
+        );
+      });
+    } else {
+      data = this.changeData();
+    }
 
     return (
       <div>

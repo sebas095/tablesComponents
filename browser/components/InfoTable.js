@@ -4,6 +4,9 @@ import LockIcon from 'react-icons/lib/md/lock';
 import SettingsIcon from 'react-icons/lib/md/settings';
 import MoodIcon from 'react-icons/lib/md/mood';
 
+let flag1 = false;
+let flag2 = false;
+
 export default class InfoTable extends React.Component {
   constructor() {
     super();
@@ -27,7 +30,7 @@ export default class InfoTable extends React.Component {
             <SettingsIcon /><br />
             <MoodIcon />
           </td>
-          <td onClick={this.handleDisplay.bind(this)} id={id}>{item.nombre}</td>
+          <td onClick={this.handleDisplay.bind(this)} id={[id]}>{item.nombre}</td>
           <td>{item.nroUnidades}u</td>
           <td>{item.progrRedespacho.toFixed(1)}</td>
           <td>{item.minTecnico}</td>
@@ -48,18 +51,35 @@ export default class InfoTable extends React.Component {
 
   handleDisplay(ev) {
     let {info} = this.state;
-    let index = Number(ev.target.id);
+    let target = ev.target.id.split(',');
+    let index = Number(target[0]);
 
-    if (info[index] === null) {
-      info.fill(null);
-      info[index] = (
-        <DropdownInfo
-          key={"key" + index + "InfoTable"}
-          elements={this.state.dataInfo[index].unidades}
-        />
-      );
+    if (target.length > 1) {
+      let id = Number(target[1]);
+      if (info[id] === null) {
+        info.fill(null);
+        info[index] = null;
+        info[id] = (
+          <DropdownInfo
+            key={"key" + index + "InfoTable"}
+            elements={this.state.dataInfo[index].unidades}
+          />
+        );
+      } else {
+        info.fill(null);
+      }
     } else {
-      info.fill(null);
+      if (info[index] === null) {
+        info.fill(null);
+        info[index] = (
+          <DropdownInfo
+            key={"key" + index + "InfoTable"}
+            elements={this.state.dataInfo[index].unidades}
+          />
+        );
+      } else {
+        info.fill(null);
+      }
     }
 
     this.setState({
@@ -67,16 +87,85 @@ export default class InfoTable extends React.Component {
     });
   }
 
+  changeData() {
+    let data = [];
+    let {dataInfo} = this.state;
+    let {filter} = this.props;
+    let index = 0;
+
+    dataInfo.forEach((item, id) => {
+      for (let i = 0; i < filter.length; i++) {
+        if ((filter[i] === "1" && item.despacho_central && (item.tipo === "H" || item.tipo === "T" || item.tipo === "TR" || item.tipo === "HD")) ||
+            (filter[i] === "2" && item.despacho_central && (item.tipo === "H" || item.tipo === "HD")) ||
+            (filter[i] === "3" && (item.tipo === "T" || item.tipo === "TR")) ||
+            (filter[i] === "4" && !item.despacho_central && (item.tipo === "HM" || item.tipo === "TM" || item.tipo === "HD")) ||
+            (filter[i] === "5" && item.despachable)) {
+
+          data.push(
+            <tr key={item.nombre + "" + id}>
+              <td>{item.posicion}</td>
+              <td>
+                <LockIcon /><br />
+                <SettingsIcon /><br />
+                <MoodIcon />
+              </td>
+              <td onClick={this.handleDisplay.bind(this)} id={[id, index]}>{item.nombre}</td>
+              <td>{item.nroUnidades}u</td>
+              <td>{item.progrRedespacho.toFixed(1)}</td>
+              <td>{item.minTecnico}</td>
+              <td>GRAFICA...</td>
+              <td>{item.disponibilidad}</td>
+            </tr>
+          );
+          index++;
+          break;
+        }
+      }
+    });
+
+    return data;
+  }
+
+  getIndex() {
+    let {info} = this.state;
+    for (let i = 0; i < info.length; i++) {
+      if (info[i] !== null && info[i] !== undefined) {
+        // console.log(info[i]);
+        return i;
+      }
+    }
+    return -1;
+  }
+
   render() {
     let {dataInfo} = this.state;
     let data = [];
+    let index = -1;
 
-    this.state.table.forEach((val, i) => {
-      data.push(val);
-      if (this.state.info[i] !== null) {
-        data.push(this.state.info[i]);
-      }
-    });
+    if (this.props.filter.length === 0) {
+      if (!flag2) index = this.getIndex();
+      flag1 = false;
+      flag2 = true;
+
+      this.state.table.forEach((val, i) => {
+        data.push(val);
+        if (this.state.info[i] !== null && this.state.info[i] !== undefined && i !== index) {
+          data.push(this.state.info[i]);
+        }
+      });
+    } else {
+      let tmp = this.changeData();
+      if (!flag1) index = this.getIndex();
+      flag1 = true;
+      flag2 = false;
+
+      tmp.forEach((val, i) => {
+        data.push(val);
+        if (this.state.info[i] !== null && this.state.info[i] !== undefined && i !== index) {
+          data.push(this.state.info[i]);
+        }
+      });
+    }
 
     return (
       <div>
