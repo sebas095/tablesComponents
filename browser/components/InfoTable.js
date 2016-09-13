@@ -3,9 +3,31 @@ import DropdownInfo from './DropdownInfo';
 import LockIcon from 'react-icons/lib/md/lock';
 import SettingsIcon from 'react-icons/lib/md/settings';
 import MoodIcon from 'react-icons/lib/md/mood';
+import Chart from 'react-chartjs2';
 
-let flag = false;
-let count = 0;
+let flag1 = false;
+let flag2 = false;
+const BarChart = (
+  <Chart
+    type="horizontalBar"
+    data={{
+      labels: ["Test1"],
+      datasets: [{
+        data: [10],
+        backgroundColor: ['rgba(27, 137, 177, 0.87)'],
+         borderColor: ['rgba(14, 113, 194, 0.88)']
+      }]
+    }}
+    options={{
+      responsive: true,
+      legend: {
+        display: false
+      }
+    }}
+    width="80"
+    height="44"
+  />
+);
 
 export default class InfoTable extends React.Component {
   constructor() {
@@ -34,7 +56,7 @@ export default class InfoTable extends React.Component {
           <td>{item.nroUnidades}u</td>
           <td>{item.progrRedespacho.toFixed(1)}</td>
           <td>{item.minTecnico}</td>
-          <td>GRAFICA...</td>
+          <td>{BarChart}</td>
           <td>{item.disponibilidad}</td>
         </tr>
       );
@@ -113,7 +135,7 @@ export default class InfoTable extends React.Component {
               <td>{item.nroUnidades}u</td>
               <td>{item.progrRedespacho.toFixed(1)}</td>
               <td>{item.minTecnico}</td>
-              <td>GRAFICA...</td>
+              <td>{BarChart}</td>
               <td>{item.disponibilidad}</td>
             </tr>
           );
@@ -130,7 +152,6 @@ export default class InfoTable extends React.Component {
     let {info} = this.state;
     for (let i = 0; i < info.length; i++) {
       if (info[i] !== null && info[i] !== undefined) {
-        // console.log(info[i]);
         return i;
       }
     }
@@ -143,9 +164,9 @@ export default class InfoTable extends React.Component {
     let index = -1;
 
     if (this.props.filter.length === 0) {
-      if (!flag) index = this.getIndex();
-      count = 0;
-      flag = true;
+      if (!flag2) index = this.getIndex();
+      flag1 = false;
+      flag2 = true;
 
       this.state.table.forEach((val, i) => {
         data.push(val);
@@ -155,9 +176,9 @@ export default class InfoTable extends React.Component {
       });
     } else {
       let tmp = this.changeData();
-      if (count < 9) index = this.getIndex();
-      count++;
-      flag = false;
+      if (!flag1) index = this.getIndex();
+      flag1 = true;
+      flag2 = false;
 
       tmp.forEach((val, i) => {
         data.push(val);
