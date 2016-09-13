@@ -1,6 +1,7 @@
 import React from 'react';
 import CourtTable from './CourtTable';
 import OverLoadTable from './OverLoadTable';
+import {Button} from 'react-materialize';
 import ContingencyTable from './ContingencyTable';
 
 export default class ILTable extends React.Component {
@@ -27,11 +28,11 @@ export default class ILTable extends React.Component {
 
     return (
       <div>
-        <h1>RESUMEN INFACTIBILIDAD/LIMITACIONES</h1>
+        <h4>RESUMEN INFACTIBILIDAD/LIMITACIONES</h4>
         <div>
-          <button id="crt" onClick={this.changeComponent.bind(this)}>Cortes</button>
-          <button id="sbcs" onClick={this.changeComponent.bind(this)}>Sobrecargas</button>
-          <button id="ctg" onClick={this.changeComponent.bind(this)}>Contingencias</button>
+          <Button id="crt" onClick={this.changeComponent.bind(this)}>Cortes</Button>&nbsp;
+          <Button id="sbcs" onClick={this.changeComponent.bind(this)}>Sobrecargas</Button>&nbsp;
+          <Button id="ctg" onClick={this.changeComponent.bind(this)}>Contingencias</Button>
         </div><br/>
         <div className="scr">{tb}</div>
       </div>

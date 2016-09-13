@@ -99,9 +99,9 @@ export default class RDTable extends React.Component {
 
     return (
       <div>
-        <h1>RESULTADOS AGREGADOS</h1>
-        <div>{tb1}</div>
-        <div>{tb2}</div>
+        <h4>RESULTADOS AGREGADOS</h4>
+        <div>{tb1}</div><br />
+        <div>{tb2}</div><br />
         <div>{tb3}</div>
       </div>
     );
