@@ -1,16 +1,18 @@
 import React from 'react';
 
-export default class RDTable extends React.Component {
+export default class RATable extends React.Component {
   constructor() {
     super();
     this.state = {
-      dataRD: {}
+      dataRD: {},
+      recursos: []
     };
   }
 
   componentWillMount() {
     this.setState({
-      dataRD: this.props.dataRD
+      dataRD: this.props.dataRD,
+      recursos: this.props.recursos
     });
   }
 
@@ -58,42 +60,32 @@ export default class RDTable extends React.Component {
       </table>
     );
 
+    let head = (
+      <tr>
+        <th>TIPO RECURSO</th>
+        <th>PROGRAMA REDESPACHO</th>
+        <th>GENERACIÓN REAL</th>
+        <th>PROGRAMA DEO-TR</th>
+      </tr>
+    );
+
+    let data = [];
+
+    this.props.recursos.forEach((item, id) => {
+      data.push(
+        <tr key={id}>
+          <th>{item.tipo}</th>
+          <td>{item.progrRedespacho.toFixed(2)}</td>
+          <td>{item.genReal.toFixed(2)}</td>
+          <td>{item.progrDEORT.toFixed(2)}</td>
+        </tr>
+      );
+    });
+
     let tb3 = (
       <table>
-        <thead>
-          <tr>
-            <th>TIPO RECURSO</th>
-            <th>PROGRAMA REDESPACHO</th>
-            <th>GENERACIÓN REAL</th>
-            <th>PROGRAMA DEO-TR</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>HIDRÁULICOS</th>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <th>TÉRMICOS</th>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <th>MENORES</th>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <th>TRANSACCIONES INTERNACIONALES</th>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
-        </tbody>
+        <thead>{head}</thead>
+        <tbody>{data}</tbody>
       </table>
     );
 

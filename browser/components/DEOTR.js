@@ -1,11 +1,11 @@
 import React from 'react';
-import RDTable from './RDTable';
+import RATable from './RATable';
 import TableComponent from './TableComponent';
 import InfoTable from './InfoTable';
 import ILTable from './ILTable';
 import {Row, Input, Button} from 'react-materialize';
 import DB from '../store/infactibilidades.json';
-import DATA from '../store/data.json';
+import DATA from '../store/reservas.json';
 
 export default class DEOTR extends React.Component {
   constructor() {
@@ -50,10 +50,10 @@ export default class DEOTR extends React.Component {
   render() {
     let tb, id = "";
     if (this.state.tableType === "tabla") {
-      tb = <TableComponent dataTable={this.props.store} filter={this.state.filter} filterDesv={this.state.filterDesv} />
+      tb = <TableComponent dataTable={this.props.store.dataR} filter={this.state.filter} filterDesv={this.state.filterDesv} />
       id = "tb inf";
     } else {
-      tb = <InfoTable dataInfo={this.props.store} filter={this.state.filter} filterDesv={this.state.filterDesv} />
+      tb = <InfoTable dataInfo={this.props.store.dataR} filter={this.state.filter} filterDesv={this.state.filterDesv} />
       id = "inf";
     }
 
@@ -128,7 +128,7 @@ export default class DEOTR extends React.Component {
           </div>
           <div className="col l6 m6 s12" id="space">
             <Row>
-              <RDTable dataRD={DATA.dataRD} />
+              <RATable dataRD={DATA} recursos={this.props.store.dataRD}/>
             </Row>
             <Row>
               <ILTable store={DB} />
