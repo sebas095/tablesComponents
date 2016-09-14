@@ -1,0 +1,213 @@
+{
+    "dataSobrecargas": [
+        {
+            "linea": "CALAMAR -TCALAMAR 1 66 kV",
+            "value": 4.835966070433258
+        }
+    ],
+    "dataContingencias": [
+        {
+            "id": "3",
+            "value": 5.464783047498024,
+            "elements": {
+                "supervisado": "SABANALARGA - BARANOA 1 110 kV",
+                "fallados": [
+                    "BARANOA - MALAMBO 1 110 kV"
+                ]
+            }
+        },
+        {
+            "id": "35",
+            "value": 6.933993130677692,
+            "elements": {
+                "supervisado": "BOSTON - CHINU 1 110 kV",
+                "fallados": [
+                    "CHINU - COVEÑAS 1 110 kV"
+                ]
+            }
+        },
+        {
+            "id": "83",
+            "value": 8.523938948586562,
+            "elements": {
+                "supervisado": "TERNERA - BOSQUE 1 66 kV",
+                "fallados": [
+                    "BOSQUE 4 150 MVA 220/66 KV"
+                ]
+            }
+        },
+        {
+            "id": "84",
+            "value": 4.942048700090666,
+            "elements": {
+                "supervisado": "BOCAGRANDE - CARTAGENA 1 66 kV",
+                "fallados": [
+                    "BOSQUE 4 150 MVA 220/66 KV"
+                ]
+            }
+        },
+        {
+            "id": "90",
+            "value": 3.0976436139219956,
+            "elements": {
+                "supervisado": "CHINU 2 150 MVA 500/110/34.5 KV",
+                "fallados": [
+                    "CHINU 1 150 MVA 500/110/34.5 KV",
+                    "CHINU 1 150 MVA 500/110/34.5 KV",
+                    "CHINU 1 150 MVA 500/110/34.5 KV"
+                ]
+            }
+        },
+        {
+            "id": "92",
+            "value": 17.69313314543868,
+            "elements": {
+                "supervisado": "CHINU 3 150 MVA 500/110/34.5 KV",
+                "fallados": [
+                    "CHINU 1 150 MVA 500/110/34.5 KV",
+                    "CHINU 1 150 MVA 500/110/34.5 KV",
+                    "CHINU 1 150 MVA 500/110/34.5 KV"
+                ]
+            }
+        },
+        {
+            "id": "93",
+            "value": 2.6495934999429807,
+            "elements": {
+                "supervisado": "CHINU 1 150 MVA 500/110/34.5 KV",
+                "fallados": [
+                    "CHINU 2 150 MVA 500/110/34.5 KV",
+                    "CHINU 2 150 MVA 500/110/34.5 KV",
+                    "CHINU 2 150 MVA 500/110/34.5 KV"
+                ]
+            }
+        },
+        {
+            "id": "95",
+            "value": 18.232330236187508,
+            "elements": {
+                "supervisado": "CHINU 3 150 MVA 500/110/34.5 KV",
+                "fallados": [
+                    "CHINU 2 150 MVA 500/110/34.5 KV",
+                    "CHINU 2 150 MVA 500/110/34.5 KV",
+                    "CHINU 2 150 MVA 500/110/34.5 KV"
+                ]
+            }
+        },
+        {
+            "id": "96",
+            "value": 6.252061390417779,
+            "elements": {
+                "supervisado": "CERROMATOSO 4 150 MVA 500/110/34.5 kV",
+                "fallados": [
+                    "CERROMATOSO 1 150 MVA 500/110/34.5 KV",
+                    "CERROMATOSO 1 150 MVA 500/110/34.5 KV",
+                    "CERROMATOSO 1 150 MVA 500/110/34.5 KV"
+                ]
+            }
+        },
+        {
+            "id": "97",
+            "value": 6.252061390417779,
+            "elements": {
+                "supervisado": "CERROMATOSO 4 150 MVA 500/110/34.5 kV",
+                "fallados": [
+                    "CERROMATOSO 2 150 MVA 500/110/34.5 KV",
+                    "CERROMATOSO 2 150 MVA 500/110/34.5 KV",
+                    "CERROMATOSO 2 150 MVA 500/110/34.5 KV"
+                ]
+            }
+        },
+        {
+            "id": "98",
+            "value": 42.00013951939746,
+            "elements": {
+                "supervisado": "SABANALARGA 9 90 MVA 220/110/13.8 KV",
+                "fallados": [
+                    "SABANALARGA 1 90 MVA 220/115/13.8 KV",
+                    "SABANALARGA 1 90 MVA 220/115/13.8 KV",
+                    "SABANALARGA 1 90 MVA 220/115/13.8 KV"
+                ]
+            }
+        },
+        {
+            "id": "99",
+            "value": 41.783084667137686,
+            "elements": {
+                "supervisado": "SABANALARGA 9 90 MVA 220/110/13.8 KV",
+                "fallados": [
+                    "SABANALARGA 1 90 MVA 220/115/13.8 KV",
+                    "SABANALARGA 1 90 MVA 220/115/13.8 KV",
+                    "SABANALARGA 1 90 MVA 220/115/13.8 KV"
+                ]
+            }
+        },
+        {
+            "id": "100",
+            "value": 34.47490027848854,
+            "elements": {
+                "supervisado": "SABANALARGA 1 90 MVA 220/115/13.8 KV",
+                "fallados": [
+                    "SABANALARGA 9 90 MVA 220/110/13.8 KV",
+                    "SABANALARGA 9 90 MVA 220/110/13.8 KV",
+                    "SABANALARGA 9 90 MVA 220/110/13.8 KV"
+                ]
+            }
+        },
+        {
+            "id": "101",
+            "value": 20.69641891879146,
+            "elements": {
+                "supervisado": "SABANALARGA 1 90 MVA 220/115/13.8 KV",
+                "fallados": [
+                    "SABANALARGA 9 90 MVA 220/110/13.8 KV",
+                    "SABANALARGA 9 90 MVA 220/110/13.8 KV",
+                    "SABANALARGA 9 90 MVA 220/110/13.8 KV"
+                ]
+            }
+        }
+    ],
+    "dataCortes": {
+        "1": {
+            "id": 1,
+            "nombre": "AR_Bolivar - Cartagena 1 220 / Bolivar - Bosque 220 + Sabanalarga - Ternera 2 220",
+            "max": 450,
+            "min": -99999,
+            "elementos": [
+                "BOLIVAR (CARTAGENA) - CARTAGENA 1 220 kV",
+                "BOLIVAR (CARTAGENA) – EL BOSQUE 1 220 kV ",
+                "SABANALARGA - TERNERA 2 220 kV"
+            ]
+        },
+        "2": {
+            "id": 2,
+            "nombre": "La Tasajera - Occidente 1 220/Central - Guayabal Temporal 110",
+            "max": 330,
+            "min": -99999,
+            "elementos": [
+                "OCCIDENTE - LA TASAJERA 1 220 kV",
+                "CENTRAL - GUAYABAL 1 110 kV"
+            ]
+        },
+        "3": {
+            "id": 3,
+            "nombre": "Bacata 500/230 / Bacata - Salitre 1 115",
+            "max": 380,
+            "min": -99999,
+            "elementos": [
+                "BACATA (ISA) 1 450 MVA 500/230/34.5 KV",
+                "BACATA (CODENSA) - SALITRE 1 115 kV"
+            ]
+        },
+        "4": {
+            "id": 4,
+            "nombre": "Bacata 500/230 / Bacata - Suba 1 115",
+            "max": 390,
+            "min": -99999,
+            "elementos": [
+                "BACATA (ISA) 1 450 MVA 500/230/34.5 KV",
+                "BACATA (CODENSA) - SUBA 1 115 kV"
+            ]
+        }
+    }
+}

@@ -12,29 +12,31 @@ export default class CourtTable extends React.Component {
   }
 
   componentWillMount() {
-    let index = Object.keys(this.props.dataCortes);
-    let data = [];
-    let info = [];
+    if (typeof this.props.dataCortes === "object") {
+      let index = Object.keys(this.props.dataCortes);
+      let data = [];
+      let info = [];
 
-    index.forEach((i) => {
-      let value = this.props.dataCortes[i];
-      data.push(
-        <tr key={value.id}>
-          <td onClick={this.handleDisplay.bind(this)}>{value.id}</td>
-          <td>{value.nombre}</td>
-          <td>{value.min}</td>
-          <td>{value.max}</td>
-        </tr>
-      );
+      index.forEach((i) => {
+        let value = this.props.dataCortes[i];
+        data.push(
+          <tr key={value.id}>
+            <td onClick={this.handleDisplay.bind(this)}>{value.id}</td>
+            <td>{value.nombre}</td>
+            <td>{value.min}</td>
+            <td>{value.max}</td>
+          </tr>
+        );
 
-      info.push(null);
-    });
+        info.push(null);
+      });
 
-    this.setState({
-      dataCortes: this.props.dataCortes,
-      table: data,
-      info: info
-    });
+      this.setState({
+        dataCortes: this.props.dataCortes,
+        table: data,
+        info: info
+      });
+    }
   }
 
   handleDisplay(ev) {

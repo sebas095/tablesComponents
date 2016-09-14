@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: rgb(211, 238, 236);
+}
+
+.area {
+  background-color: rgb(211, 238, 236);
+}
+
+.tb {
+  overflow-x: scroll;
+}
+
+.inf {
+  max-height: 1110px;
+  overflow-y: auto;
+}
+
+.scr {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.green {
+  background-color: rgb(51, 167, 23);
+}
+
+.gray {
+  background-color: rgb(175, 175, 175);
+}

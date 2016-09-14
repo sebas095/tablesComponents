@@ -4,17 +4,29 @@ import TableComponent from './TableComponent';
 import InfoTable from './InfoTable';
 import ILTable from './ILTable';
 import {Row, Input, Button} from 'react-materialize';
-import DB from '../store/infactibilidades.json';
-import DATA from '../store/reservas.json';
 
 export default class DEOTR extends React.Component {
   constructor() {
     super();
     this.state = {
+      store: {},
+      inf: {},
+      res: {},
       tableType: "",
       filter: [],
       filterDesv: ""
     };
+  }
+
+  componentWillMount() {
+    this.props.socket.on('data', (msg) => {
+      this.setState({
+        res: msg.reservas,
+        store: msg.recursos,
+        inf: msg.infactibilidades,
+        tableType: "infoGr"
+      });
+    });
   }
 
   changeTable(ev) {
@@ -50,10 +62,10 @@ export default class DEOTR extends React.Component {
   render() {
     let tb, id = "";
     if (this.state.tableType === "tabla") {
-      tb = <TableComponent dataTable={this.props.store.dataR} filter={this.state.filter} filterDesv={this.state.filterDesv} />
+      tb = <TableComponent dataTable={this.state.store.dataR} filter={this.state.filter} filterDesv={this.state.filterDesv} />
       id = "tb inf";
     } else {
-      tb = <InfoTable dataInfo={this.props.store.dataR} filter={this.state.filter} filterDesv={this.state.filterDesv} />
+      tb = <InfoTable dataInfo={this.state.store.dataR} filter={this.state.filter} filterDesv={this.state.filterDesv} />
       id = "inf";
     }
 
@@ -128,10 +140,10 @@ export default class DEOTR extends React.Component {
           </div>
           <div className="col l6 m6 s12" id="space">
             <Row>
-              <RATable dataRD={DATA} recursos={this.props.store.dataRD}/>
+              <RATable dataRD={this.state.res} recursos={this.state.store.dataRD}/>
             </Row>
             <Row>
-              <ILTable store={DB} />
+              <ILTable store={this.state.inf} />
             </Row>
           </div>
         </Row>

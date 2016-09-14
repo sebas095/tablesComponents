@@ -43,32 +43,34 @@ export default class InfoTable extends React.Component {
     let data = [];
     let info = [];
 
-    this.props.dataInfo.forEach((item, id) => {
-      data.push(
-        <tr key={item.nombre + "" + id}>
-          <td>{item.posicion}</td>
-          <td>
-            <LockIcon /><br />
-            <SettingsIcon /><br />
-            <MoodIcon />
-          </td>
-          <td onClick={this.handleDisplay.bind(this)} id={[id]}>{item.nombre}</td>
-          <td>{item.nroUnidades}u</td>
-          <td>{item.progrRedespacho.toFixed(1)}</td>
-          <td>{item.minTecnico}</td>
-          <td>{BarChart}</td>
-          <td>{item.disponibilidad}</td>
-        </tr>
-      );
+    if (typeof this.props.dataInfo === "object") {
+      this.props.dataInfo.forEach((item, id) => {
+        data.push(
+          <tr key={item.nombre + "" + id}>
+            <td>{item.posicion}</td>
+            <td>
+              <LockIcon /><br />
+              <SettingsIcon /><br />
+              <MoodIcon />
+            </td>
+            <td onClick={this.handleDisplay.bind(this)} id={[id]}>{item.nombre}</td>
+            <td>{item.nroUnidades}u</td>
+            <td>{item.progrRedespacho.toFixed(1)}</td>
+            <td>{item.minTecnico}</td>
+            <td>{BarChart}</td>
+            <td>{item.disponibilidad}</td>
+          </tr>
+        );
 
-      info.push(null);
-    });
+        info.push(null);
+      });
 
-    this.setState({
-      dataInfo: this.props.dataInfo,
-      table: data,
-      info: info
-    });
+      this.setState({
+        dataInfo: this.props.dataInfo,
+        table: data,
+        info: info
+      });
+    }
   }
 
   handleDisplay(ev) {

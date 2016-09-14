@@ -3,20 +3,11 @@ import React from 'react';
 export default class TableComponent extends React.Component {
   constructor() {
     super();
-    this.state = {
-      dataTable: []
-    };
-  }
-
-  componentWillMount() {
-    this.setState({
-      dataTable: this.props.dataTable
-    });
   }
 
   changeData() {
     let data = [];
-    let {dataTable} = this.state;
+    let {dataTable} = this.props;
     let {filter, filterDesv} = this.props;
     filterDesv = (filterDesv.length > 0)? Number(filterDesv) : NaN;
 
@@ -57,7 +48,7 @@ export default class TableComponent extends React.Component {
 
   handleFilter() {
     let data = [];
-    let {dataTable} = this.state;
+    let {dataTable} = this.props;
     let {filterDesv} = this.props;
     filterDesv = (filterDesv.length > 0)? Number(filterDesv) : NaN;
 
@@ -111,7 +102,7 @@ export default class TableComponent extends React.Component {
     );
 
     if (this.props.filter.length === 0 && this.props.filterDesv.length === 0) {
-      this.state.dataTable.forEach((item, id) => {
+      this.props.dataTable.forEach((item, id) => {
         data.push(
           <tr key={id}>
             <td>{item.posicion}</td>

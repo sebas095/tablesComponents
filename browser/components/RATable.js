@@ -3,17 +3,6 @@ import React from 'react';
 export default class RATable extends React.Component {
   constructor() {
     super();
-    this.state = {
-      dataRD: {},
-      recursos: []
-    };
-  }
-
-  componentWillMount() {
-    this.setState({
-      dataRD: this.props.dataRD,
-      recursos: this.props.recursos
-    });
   }
 
   render() {
@@ -22,15 +11,15 @@ export default class RATable extends React.Component {
         <tbody>
           <tr>
             <th>Demanda del Sistema</th>
-            <td>{this.state.dataRD.Dgen.toFixed(1)}</td>
+            <td>{(this.props.dataRD.Dgen)? this.props.dataRD.Dgen.toFixed(1) : ""}</td>
           </tr>
           <tr>
             <th>Generación total programada</th>
-            <td>{this.state.dataRD.genDEOTR.toFixed(1)}</td>
+            <td>{(this.props.dataRD.genDEOTR)? this.props.dataRD.genDEOTR.toFixed(1) : ""}</td>
           </tr>
           <tr>
             <th>Perdidas del sistema</th>
-            <td>{this.state.dataRD.Perd.toFixed(1)}</td>
+            <td>{(this.props.dataRD.Perd)? this.props.dataRD.Perd.toFixed(1) : ""}</td>
           </tr>
         </tbody>
       </table>
@@ -48,13 +37,13 @@ export default class RATable extends React.Component {
         <tbody>
           <tr>
             <th>Secundarias</th>
-            <td>{this.state.dataRD.rSecundariaDOWN}</td>
-            <td>{this.state.dataRD.rSecundariaUP}</td>
+            <td>{this.props.dataRD.rSecundariaDOWN}</td>
+            <td>{this.props.dataRD.rSecundariaUP}</td>
           </tr>
           <tr>
             <th>Terciaria</th>
-            <td>{this.state.dataRD.rTerciariaDOWN}</td>
-            <td>{this.state.dataRD.rTerciariaUP}</td>
+            <td>{this.props.dataRD.rTerciariaDOWN}</td>
+            <td>{this.props.dataRD.rTerciariaUP}</td>
           </tr>
         </tbody>
       </table>
@@ -71,16 +60,18 @@ export default class RATable extends React.Component {
 
     let data = [];
 
-    this.props.recursos.forEach((item, id) => {
-      data.push(
-        <tr key={id}>
-          <th>{item.tipo}</th>
-          <td>{item.progrRedespacho.toFixed(2)}</td>
-          <td>{item.genReal.toFixed(2)}</td>
-          <td>{item.progrDEORT.toFixed(2)}</td>
-        </tr>
-      );
-    });
+    if (typeof this.props.recursos === "object") {
+      this.props.recursos.forEach((item, id) => {
+        data.push(
+          <tr key={id}>
+            <th>{item.tipo}</th>
+            <td>{item.progrRedespacho.toFixed(2)}</td>
+            <td>{item.genReal.toFixed(2)}</td>
+            <td>{item.progrDEORT.toFixed(2)}</td>
+          </tr>
+        );
+      });
+    }
 
     let tb3 = (
       <table>

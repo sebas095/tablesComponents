@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "mkdir -p assets/js",
-    "build-js": "browserify -t [ babelify --presets [ es2015 react ] ] browser/main.js -o assets/js/bundle.js",
-    "watch-js": "watchify -t [ babelify --presets [ es2015 react ] ] browser/main.js -o assets/js/bundle.js -dv",
-    "start": "npm run build-js && http-server .",
-    "start-dev": "export NODE_ENV=development && npm run watch-js & http-server .",
+    "build-js": "browserify -t [ babelify --presets [ es2015 react ] ] browser/main.js -o public/js/bundle.js",
+    "watch-js": "watchify -t [ babelify --presets [ es2015 react ] ] browser/main.js -o public/js/bundle.js -dv",
+    "start": "npm run build-js && node ./bin/www",
+    "start-dev": "export NODE_ENV=development && npm run watch-js & node ./bin/www",
     "test": ""
   },
   "repository": {
@@ -25,14 +25,23 @@
     "babel-preset-es2015": "6.14.0",
     "babel-preset-react": "6.11.1",
     "babelify": "7.3.0",
+    "body-parser": "~1.15.1",
     "browserify": "13.1.0",
     "chart.js": "1.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
     "http-server": "0.9.0",
+    "morgan": "~1.7.0",
     "react": "15.3.1",
     "react-chartjs2": "1.0.6",
     "react-dom": "15.3.1",
     "react-icons": "2.2.1",
     "react-materialize": "0.16.4",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "1.4.8",
+    "socket.io-client": "1.4.8",
     "watchify": "3.7.0"
   }
 }
