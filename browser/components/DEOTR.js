@@ -4,6 +4,9 @@ import TableComponent from './TableComponent';
 import InfoTable from './InfoTable';
 import ILTable from './ILTable';
 import {Row, Input, Button} from 'react-materialize';
+import io from 'socket.io-client';
+
+const socket = io.connect();
 
 export default class DEOTR extends React.Component {
   constructor() {
@@ -19,7 +22,7 @@ export default class DEOTR extends React.Component {
   }
 
   componentWillMount() {
-    this.props.socket.on('data', (msg) => {
+    socket.on('data', (msg) => {
       this.setState({
         res: msg.reservas,
         store: msg.recursos,
